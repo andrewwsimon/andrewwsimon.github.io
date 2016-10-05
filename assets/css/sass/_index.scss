@@ -1,3 +1,45 @@
+/* ------------ LOADER STYLES ------------ */
+
+#loader {
+	height: 100vh;
+	width: 100vw;
+	z-index: 100000000000000000;
+	position: fixed;
+	background: $offblack;
+	display: table;
+	transition: all .75s ease;
+}
+
+#loader-container {
+	display: table-cell;
+	vertical-align: middle;
+}
+
+#img-container {
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
+
+#img-container img {
+	height: 100px;
+	width: 100px;
+	padding: 20px;
+	border-radius: 50%;
+	border: 3px solid $offwhite;
+	transition: all .75s ease;
+	animation: loader .75s infinite;
+}
+
+@keyframes loader {
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(360deg);
+	}
+}
+
 /* ------------ iDo STYLES ------------ */
 
 #iDo {
@@ -7,6 +49,7 @@
     h1 {
         padding-top: 40px;
         text-align: center;
-        font-size: 9vw;
+        font-size: 7vw;
+        font-weight: bold;
     }
 }

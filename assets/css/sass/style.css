@@ -65,7 +65,7 @@ section {
     position: absolute;
     bottom: 20px;
     text-align: center;
-    left: 47%; }
+    left: 48.5%; }
   #pageHeader a {
     color: #F2F2F2; }
 
@@ -73,6 +73,39 @@ section {
   #pageHeader h1 {
     font-size: 5vw;
     letter-spacing: 1.1vw; } }
+/* ------------ LOADER STYLES ------------ */
+#loader {
+  height: 100vh;
+  width: 100vw;
+  z-index: 100000000000000000;
+  position: fixed;
+  background: #171717;
+  display: table;
+  transition: all .75s ease; }
+
+#loader-container {
+  display: table-cell;
+  vertical-align: middle; }
+
+#img-container {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center; }
+
+#img-container img {
+  height: 100px;
+  width: 100px;
+  padding: 20px;
+  border-radius: 50%;
+  border: 3px solid #F2F2F2;
+  transition: all .75s ease;
+  animation: loader .75s infinite; }
+
+@keyframes loader {
+  from {
+    transform: rotate(0deg); }
+  to {
+    transform: rotate(360deg); } }
 /* ------------ iDo STYLES ------------ */
 #iDo {
   background-color: #F2F2F2;
@@ -80,6 +113,7 @@ section {
   #iDo h1 {
     padding-top: 40px;
     text-align: center;
-    font-size: 9vw; }
+    font-size: 7vw;
+    font-weight: bold; }
 
 /*# sourceMappingURL=style.css.map */

@@ -36,4 +36,16 @@ $("a").on('click', function(event) {
         window.location.hash = hash;
       });
     } // End if
-  });
+});
+
+// loader end
+
+document.body.style.overflowY = "hidden"
+setTimeout(function() {
+  document.getElementById("loader").style.opacity = "0";
+  document.body.style.overflowY = "auto"
+  setTimeout(function() {
+    document.getElementById("loader").style.display = "none";
+  }, 1000);
+  // document.getElementById("loader").style.display = "none";
+}, 1000);

@@ -1,19 +1,21 @@
 /*
-Error: Undefined variable: "$offwhite".
-        on line 4 of /home/ubuntu/workspace/assets/css/sass/_index.scss
+Error: Undefined variable: "$offblack".
+        on line 8 of /home/ubuntu/workspace/assets/css/sass/_index.scss
 
-1: /* ------------ iDo STYLES ------------ *\/
-2: 
-3: #iDo {
-4:     background-color: $offwhite;
-5:     color: $offblack;
-6:     
-7:     h1 {
-8:         padding-top: 40px;
-9:         text-align: center;
+3: #loader {
+4: 	height: 100vh;
+5: 	width: 100vw;
+6: 	z-index: 100000000000000000;
+7: 	position: fixed;
+8: 	background: $offblack;
+9: 	display: table;
+10: 	transition: all .75s ease;
+11: }
+12: 
+13: #loader-container {
 
 Backtrace:
-/home/ubuntu/workspace/assets/css/sass/_index.scss:4
+/home/ubuntu/workspace/assets/css/sass/_index.scss:8
 /nix/store/zmisxnl63ica4zaviifixamr3xg27kzp-ruby-2.3.1-p0/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/script/tree/variable.rb:49:in `_perform'
 /nix/store/zmisxnl63ica4zaviifixamr3xg27kzp-ruby-2.3.1-p0/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/script/tree/node.rb:58:in `perform'
 /nix/store/zmisxnl63ica4zaviifixamr3xg27kzp-ruby-2.3.1-p0/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:397:in `visit_prop'
@@ -63,4 +65,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$offwhite\".\A         on line 4 of /home/ubuntu/workspace/assets/css/sass/_index.scss\A \A 1: /* ------------ iDo STYLES ------------ */\A 2: \A 3: #iDo {\A 4:     background-color: $offwhite;\A 5:     color: $offblack;\A 6:     \A 7:     h1 {\A 8:         padding-top: 40px;\A 9:         text-align: center;"; }
+  content: "Error: Undefined variable: \"$offblack\".\A         on line 8 of /home/ubuntu/workspace/assets/css/sass/_index.scss\A \A 3: #loader {\A 4: 	height: 100vh;\A 5: 	width: 100vw;\A 6: 	z-index: 100000000000000000;\A 7: 	position: fixed;\A 8: 	background: $offblack;\A 9: 	display: table;\A 10: 	transition: all .75s ease;\A 11: }\A 12: \A 13: #loader-container {"; }
