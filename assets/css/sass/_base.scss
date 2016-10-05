@@ -1,0 +1,113 @@
+/* ------------ GLOBAL STYLES ------------ */
+
+body {
+    font-family: 'Montserrat', Helvetica, sans-serif;
+    color: $offwhite;
+    text-transform: uppercase;
+    background-color: $offblack;
+}
+
+#pageHeader {
+    padding-top: 50px;
+    height: 100vh;
+}
+
+section {
+    height: 100vh;
+}
+
+.full-width-on {
+    width: 100vw;
+}
+
+/* ------------ NAVBAR STYLES ------------ */
+
+.navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form, .navbar{
+    border-color: $offblack;
+    background-color: $offblack;
+}
+
+.navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus, .navbar-inverse .navbar-nav>.active>a:hover {
+    background-color: $offblack;
+}
+
+.navbar-inverse .navbar-nav>li>a, .navbar-inverse .navbar-brand {
+    color: $darkeroffwhite;
+}
+
+.navbar-brand>img {
+    display: inline;
+    vertical-align: top;
+}
+
+.navbar-inverse .navbar-toggle {
+    border-color: transparent;
+}
+/* ------------ HEADER STYLES ------------ */
+
+#pageHeader {
+    text-align: center;
+    
+    h1 {
+        padding: 20px;
+        font-weight: bold;
+        font-size: 1.8em;
+        letter-spacing: 10px;
+        border: 3px solid $offwhite;
+        text-align: center;
+    }
+    
+    h2 {
+        margin-top: 30px;
+        font-size: .8em;
+        letter-spacing: 5px;
+        font-weight: bold;
+    }
+    
+    .horule {
+        margin-top: 7px;
+        border-top: 2px solid $offwhite;
+    }
+    
+    img {
+        margin-left: auto;
+        margin-right: auto;
+    }
+     p {
+         padding-top: 20px;
+         font-size: 9vw;
+         line-height: 9vw;
+     }
+     .header-tagline {
+         display: block;
+     }
+     .header-down {
+         font-size: 30px;
+         position: absolute;
+         bottom: 20px;
+         //margin-left: auto;
+         //margin-right: auto;
+         text-align: center;
+         left: 47%;
+     }
+     a {
+         color: $offwhite;
+     }
+}
+
+//@media only screen and (min-width: 768px) and (max-width: 991px) {
+//    #pageHeader h1 {
+//        width: 60vw;
+        //margin-right: auto;
+        //margin-left: auto;
+//    }
+//}
+
+@media only screen and (max-width: 480px) {
+    #pageHeader h1 {
+        font-size: 5vw;
+        letter-spacing: 1.1vw;
+        //width: 90vw;
+    }
+}
+

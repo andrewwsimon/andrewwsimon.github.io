@@ -1,0 +1,85 @@
+/* ------------ GLOBAL STYLES ------------ */
+body {
+  font-family: 'Montserrat', Helvetica, sans-serif;
+  color: #F2F2F2;
+  text-transform: uppercase;
+  background-color: #171717; }
+
+#pageHeader {
+  padding-top: 50px;
+  height: 100vh; }
+
+section {
+  height: 100vh; }
+
+.full-width-on {
+  width: 100vw; }
+
+/* ------------ NAVBAR STYLES ------------ */
+.navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form, .navbar {
+  border-color: #171717;
+  background-color: #171717; }
+
+.navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:focus, .navbar-inverse .navbar-nav > .active > a:hover {
+  background-color: #171717; }
+
+.navbar-inverse .navbar-nav > li > a, .navbar-inverse .navbar-brand {
+  color: #E5E5E5; }
+
+.navbar-brand > img {
+  display: inline;
+  vertical-align: top; }
+
+.navbar-inverse .navbar-toggle {
+  border-color: transparent; }
+
+/* ------------ HEADER STYLES ------------ */
+#pageHeader {
+  text-align: center; }
+  #pageHeader h1 {
+    padding: 20px;
+    font-weight: bold;
+    font-size: 1.8em;
+    letter-spacing: 10px;
+    border: 3px solid #F2F2F2;
+    text-align: center; }
+  #pageHeader h2 {
+    margin-top: 30px;
+    font-size: .8em;
+    letter-spacing: 5px;
+    font-weight: bold; }
+  #pageHeader .horule {
+    margin-top: 7px;
+    border-top: 2px solid #F2F2F2; }
+  #pageHeader img {
+    margin-left: auto;
+    margin-right: auto; }
+  #pageHeader p {
+    padding-top: 20px;
+    font-size: 9vw;
+    line-height: 9vw; }
+  #pageHeader .header-tagline {
+    display: block; }
+  #pageHeader .header-down {
+    font-size: 30px;
+    position: absolute;
+    bottom: 20px;
+    text-align: center;
+    left: 47%; }
+  #pageHeader a {
+    color: #F2F2F2; }
+
+@media only screen and (max-width: 480px) {
+  #pageHeader h1 {
+    font-size: 5vw;
+    letter-spacing: 1.1vw; } }
+/* ------------ iDo STYLES ------------ */
+#iDo {
+  background-color: #F2F2F2;
+  color: #171717; }
+  #iDo h1 {
+    padding-top: 40px;
+    text-align: center;
+    font-size: 9vw; }
+
+/*# sourceMappingURL=style.css.map */
