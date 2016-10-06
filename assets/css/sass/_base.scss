@@ -22,12 +22,10 @@ section {
 
 /* ------------ NAVBAR STYLES ------------ */
 
-.navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form, .navbar{
+.navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form, .navbar, .navbar-inverse .navbar-toggle, .navbar-inverse .navbar-toggle:focus, .navbar-inverse .navbar-toggle:hover, .navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus, .navbar-inverse .navbar-nav>.active>a:hover {
+    //border-color: transparent;
+    //background-color: transparent;
     border-color: $offblack;
-    background-color: $offblack;
-}
-
-.navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus, .navbar-inverse .navbar-nav>.active>a:hover {
     background-color: $offblack;
 }
 
@@ -40,9 +38,10 @@ section {
     vertical-align: top;
 }
 
-.navbar-inverse .navbar-toggle {
-    border-color: transparent;
+#mainNav {
+    position: absolute;
 }
+
 /* ------------ HEADER STYLES ------------ */
 
 #pageHeader {

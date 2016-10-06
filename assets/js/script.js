@@ -18,7 +18,6 @@ if ($(window).width <= 580) {
 // animate scrolling
 $("a").on('click', function(event) {
 
-    // Make sure this.hash has a value before overriding default behavior
     if (this.hash !== "") {
       // Prevent default anchor click behavior
       event.preventDefault();
@@ -49,3 +48,17 @@ setTimeout(function() {
   }, 1000);
   // document.getElementById("loader").style.display = "none";
 }, 1000);
+
+// nav
+
+var scrollTop = $(window).scrollTop() ;
+var windowHeight = window.innerHeight;
+
+
+$("html").scroll(function() { 
+  if (scrollTop >= windowHeight) {   //alert("suh");
+    $("#mainNav").css("position", "fixed");
+  } else {
+    $("#mainNav").css("position", "absolute");
+  }
+});

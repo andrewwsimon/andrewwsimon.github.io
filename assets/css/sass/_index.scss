@@ -40,6 +40,18 @@
 	}
 }
 
+/* ------------ HEADER STYLES ------------ */
+
+.background-image-container img {
+        background-size: cover;
+        opacity: 0.1;
+        position: absolute;
+        overflow: hidden;
+}
+
+
+
+
 /* ------------ iDo STYLES ------------ */
 
 #iDo {

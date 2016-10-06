@@ -16,11 +16,8 @@ section {
   width: 100vw; }
 
 /* ------------ NAVBAR STYLES ------------ */
-.navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form, .navbar {
+.navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form, .navbar, .navbar-inverse .navbar-toggle, .navbar-inverse .navbar-toggle:focus, .navbar-inverse .navbar-toggle:hover, .navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:focus, .navbar-inverse .navbar-nav > .active > a:hover {
   border-color: #171717;
-  background-color: #171717; }
-
-.navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:focus, .navbar-inverse .navbar-nav > .active > a:hover {
   background-color: #171717; }
 
 .navbar-inverse .navbar-nav > li > a, .navbar-inverse .navbar-brand {
@@ -30,8 +27,8 @@ section {
   display: inline;
   vertical-align: top; }
 
-.navbar-inverse .navbar-toggle {
-  border-color: transparent; }
+#mainNav {
+  position: absolute; }
 
 /* ------------ HEADER STYLES ------------ */
 #pageHeader {
@@ -106,6 +103,13 @@ section {
     transform: rotate(0deg); }
   to {
     transform: rotate(360deg); } }
+/* ------------ HEADER STYLES ------------ */
+.background-image-container img {
+  background-size: cover;
+  opacity: 0.1;
+  position: absolute;
+  overflow: hidden; }
+
 /* ------------ iDo STYLES ------------ */
 #iDo {
   background-color: #F2F2F2;
