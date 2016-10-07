@@ -102,8 +102,7 @@ section {
     margin-right: auto; }
   #pageHeader p {
     padding-top: 20px;
-    font-size: 9vw;
-    line-height: 9vw; }
+    line-height: 10vw; }
   #pageHeader .header-tagline {
     display: block; }
   #pageHeader .header-down {
@@ -126,18 +125,19 @@ section {
   position: absolute;
   overflow: hidden; }
 
-.skill-container span {
+.skill-container span[class="active"] {
   position: relative;
   display: block; }
 
-.skill-container span[class="next"] {
-  left: 2000px;
-  z-index: 5; }
+/*.skill-container span[class="next"] {
+    left: 2000px;
+    z-index: 5;
+}
 
 .skill-container span[class="previous"] {
-  left: -2000px;
-  z-index: 10; }
-
+    left: -2000px;
+    z-index: 10;
+}*/
 /* ------------ iDo STYLES ------------ */
 #iDo {
   background-color: #F2F2F2;
@@ -145,10 +145,9 @@ section {
   #iDo h1 {
     padding-top: 40px;
     text-align: center;
-    font-size: 7vw;
     font-weight: bold; }
   #iDo .section-body {
-    padding-top: 50px; }
+    padding-top: 1vw; }
   #iDo .img-container {
     margin-right: auto;
     margin-left: auto; }
@@ -159,7 +158,25 @@ section {
     display: block;
     margin: 0 auto; }
   #iDo .section-body h2 {
-    font-size: 30px;
     font-weight: bold; }
+
+@media only screen and (min-width: 767px) {
+  #iDo h1 {
+    font-size: 7vw; }
+
+  header p {
+    font-size: 10vw; }
+
+  .section-body h2 {
+    font-size: 2vw; } }
+@media only screen and (max-width: 766px) {
+  #iDo h1 {
+    font-size: 13vw; }
+
+  header p {
+    font-size: 13vw; }
+
+  .section-body h2 {
+    font-size: 5vw; } }
 
 /*# sourceMappingURL=style.css.map */
