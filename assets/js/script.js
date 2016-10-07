@@ -66,7 +66,7 @@ $(window).on('scroll', function() {
   }
 });
 
-//header animation
+/*header animation
 
 //declare array of objects
 var skills = [$('.skill-container span[class="active"]'), $('.skill-container span[class="next"]'), $('.skill-container span[class="previous"]')]
@@ -80,7 +80,7 @@ setTimeout(function() {
     $('.skill-container span[class="active"]').animate({'left': '-2000px'}, { duration: 1000, queue: false });
     
     //change class
-    //$('.skill-container span[class="active"]').removeClass('active').addClass('previous');*/
+    //$('.skill-container span[class="active"]').removeClass('active').addClass('previous');
   
     // NEXT TO ACTIVE
     $('.skill-container span[class="next"]').animate({'left': '0px'}, { duration: 1000, queue: false });
@@ -102,7 +102,7 @@ setTimeout(function() {
 
     
   }
-}, 1500);
+}, 1500);*/
 
 
 
