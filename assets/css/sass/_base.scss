@@ -20,6 +20,48 @@ section {
     width: 100vw;
 }
 
+/* ------------ LOADER STYLES ------------ */
+
+#loader {
+	height: 100vh;
+	width: 100vw;
+	z-index: 10000;
+	position: fixed;
+	background: $offblack;
+	display: table;
+	transition: all .75s ease;
+}
+
+#loader-container {
+	display: table-cell;
+	vertical-align: middle;
+}
+
+#img-container {
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
+
+#img-container img {
+	height: 100px;
+	width: 100px;
+	padding: 20px;
+	border-radius: 50%;
+	border: 3px solid $offwhite;
+	transition: all .75s ease;
+	animation: loader .75s infinite;
+}
+
+@keyframes loader {
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(360deg);
+	}
+}
+
 /* ------------ NAVBAR STYLES ------------ */
 
 .navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form, .navbar, .navbar-inverse .navbar-toggle, .navbar-inverse .navbar-toggle:focus, .navbar-inverse .navbar-toggle:hover, .navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus, .navbar-inverse .navbar-nav>.active>a:hover {
@@ -39,8 +81,32 @@ section {
 }
 
 #mainNav {
-    position: absolute;
+    //position: absolute;
 }
+
+// hover animation
+#mainNav li:hover {
+    .anim-underline {
+        //animation: underline .50s ease;
+        width: 85%;
+    }
+}
+.anim-underline {
+    border-top: 2px solid $offwhite;
+    width: 0;
+    margin: 0 auto;
+    transition: width .5s ease;
+    position: absolute;
+    left: 0; 
+    right: 0; 
+    margin-left: auto; 
+    margin-right: auto; 
+    z-index: 10000;
+}
+/*@keyframes underline {
+    from {width: 0};
+    to {width: 30px;}
+}*/
 
 /* ------------ HEADER STYLES ------------ */
 
@@ -107,4 +173,6 @@ section {
         //width: 90vw;
     }
 }
+
+// header animation
 

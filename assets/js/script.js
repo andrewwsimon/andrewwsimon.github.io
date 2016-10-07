@@ -51,14 +51,58 @@ setTimeout(function() {
 
 // nav
 
-var scrollTop = $(window).scrollTop() ;
-var windowHeight = window.innerHeight;
+var scrollTop = $(window).scrollTop();
+var windowHeight = $(window).height() - 40;
 
 
-$("html").scroll(function() { 
-  if (scrollTop >= windowHeight) {   //alert("suh");
+$(window).on('scroll', function() { 
+  console.log(scrollTop + ', ' + windowHeight);
+  var windowHeight = $(window).height() - 40;
+  scrollTop = $(window).scrollTop();
+  if (scrollTop >= windowHeight) {
     $("#mainNav").css("position", "fixed");
   } else {
     $("#mainNav").css("position", "absolute");
   }
 });
+
+//header animation
+
+//declare array of objects
+var skills = [$('.skill-container span[class="active"]'), $('.skill-container span[class="next"]'), $('.skill-container span[class="previous"]')]
+
+//$('.skill-container span[class="next"], .skill-container span[class="previous"]').css({'display': 'none'});
+
+setTimeout(function() {
+    for (var i=0; i<Infinity; i++) {
+
+    // ACTIVE TO PREVIOUS
+    $('.skill-container span[class="active"]').animate({'left': '-2000px'}, { duration: 1000, queue: false });
+    
+    //change class
+    //$('.skill-container span[class="active"]').removeClass('active').addClass('previous');*/
+  
+    // NEXT TO ACTIVE
+    $('.skill-container span[class="next"]').animate({'left': '0px'}, { duration: 1000, queue: false });
+    
+    //change class
+    //$('.skill-container span[class="next"]').removeClass('next').addClass('active');
+    
+    // PREVIOUS TO NEXT
+    $('.skill-container span[class="previous"]').css({'left': '2000px'});
+    
+    //change class
+    //$('.skill-container span[class="previous"]').removeClass('previous').addClass('next');
+    
+    //change classes
+    $('.skill-container span[class="active"]').removeClass('active').addClass('previous');
+    $('.skill-container span[class="next"]').removeClass('next').addClass('active');
+    $('.skill-container span[class="previous"]').removeClass('previous').addClass('next');
+    
+
+    
+  }
+}, 1500);
+
+
+

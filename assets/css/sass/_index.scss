@@ -1,45 +1,3 @@
-/* ------------ LOADER STYLES ------------ */
-
-#loader {
-	height: 100vh;
-	width: 100vw;
-	z-index: 100000000000000000;
-	position: fixed;
-	background: $offblack;
-	display: table;
-	transition: all .75s ease;
-}
-
-#loader-container {
-	display: table-cell;
-	vertical-align: middle;
-}
-
-#img-container {
-	margin-left: auto;
-	margin-right: auto;
-	text-align: center;
-}
-
-#img-container img {
-	height: 100px;
-	width: 100px;
-	padding: 20px;
-	border-radius: 50%;
-	border: 3px solid $offwhite;
-	transition: all .75s ease;
-	animation: loader .75s infinite;
-}
-
-@keyframes loader {
-	from {
-		transform: rotate(0deg);
-	}
-	to {
-		transform: rotate(360deg);
-	}
-}
-
 /* ------------ HEADER STYLES ------------ */
 
 .background-image-container img {
@@ -49,9 +7,20 @@
         overflow: hidden;
 }
 
+.skill-container span {
+    position: relative;
+    display: block;
+}
 
+.skill-container span[class="next"] {
+    left: 2000px;
+    z-index: 5;
+}
 
-
+.skill-container span[class="previous"] {
+    left: -2000px;
+    z-index: 10;
+}
 /* ------------ iDo STYLES ------------ */
 
 #iDo {
@@ -63,5 +32,24 @@
         text-align: center;
         font-size: 7vw;
         font-weight: bold;
+    }
+    .section-body {
+    	padding-top: 50px;
+    }
+    .img-container {
+        margin-right: auto;
+        margin-left: auto;
+    }
+    img {
+    	border-radius: 30px;
+		//border: 3px solid $offblack;
+		padding: 20px;
+		background-color: $offblack;
+		display: block;
+        margin: 0 auto;
+    }
+    .section-body h2 {
+    	font-size: 30px;
+    	font-weight: bold;
     }
 }

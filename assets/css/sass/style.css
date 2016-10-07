@@ -15,6 +15,39 @@ section {
 .full-width-on {
   width: 100vw; }
 
+/* ------------ LOADER STYLES ------------ */
+#loader {
+  height: 100vh;
+  width: 100vw;
+  z-index: 10000;
+  position: fixed;
+  background: #171717;
+  display: table;
+  transition: all .75s ease; }
+
+#loader-container {
+  display: table-cell;
+  vertical-align: middle; }
+
+#img-container {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center; }
+
+#img-container img {
+  height: 100px;
+  width: 100px;
+  padding: 20px;
+  border-radius: 50%;
+  border: 3px solid #F2F2F2;
+  transition: all .75s ease;
+  animation: loader .75s infinite; }
+
+@keyframes loader {
+  from {
+    transform: rotate(0deg); }
+  to {
+    transform: rotate(360deg); } }
 /* ------------ NAVBAR STYLES ------------ */
 .navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form, .navbar, .navbar-inverse .navbar-toggle, .navbar-inverse .navbar-toggle:focus, .navbar-inverse .navbar-toggle:hover, .navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:focus, .navbar-inverse .navbar-nav > .active > a:hover {
   border-color: #171717;
@@ -27,9 +60,25 @@ section {
   display: inline;
   vertical-align: top; }
 
-#mainNav {
-  position: absolute; }
+#mainNav li:hover .anim-underline {
+  width: 85%; }
 
+.anim-underline {
+  border-top: 2px solid #F2F2F2;
+  width: 0;
+  margin: 0 auto;
+  transition: width .5s ease;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  z-index: 10000; }
+
+/*@keyframes underline {
+    from {width: 0};
+    to {width: 30px;}
+}*/
 /* ------------ HEADER STYLES ------------ */
 #pageHeader {
   text-align: center; }
@@ -70,45 +119,24 @@ section {
   #pageHeader h1 {
     font-size: 5vw;
     letter-spacing: 1.1vw; } }
-/* ------------ LOADER STYLES ------------ */
-#loader {
-  height: 100vh;
-  width: 100vw;
-  z-index: 100000000000000000;
-  position: fixed;
-  background: #171717;
-  display: table;
-  transition: all .75s ease; }
-
-#loader-container {
-  display: table-cell;
-  vertical-align: middle; }
-
-#img-container {
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center; }
-
-#img-container img {
-  height: 100px;
-  width: 100px;
-  padding: 20px;
-  border-radius: 50%;
-  border: 3px solid #F2F2F2;
-  transition: all .75s ease;
-  animation: loader .75s infinite; }
-
-@keyframes loader {
-  from {
-    transform: rotate(0deg); }
-  to {
-    transform: rotate(360deg); } }
 /* ------------ HEADER STYLES ------------ */
 .background-image-container img {
   background-size: cover;
   opacity: 0.1;
   position: absolute;
   overflow: hidden; }
+
+.skill-container span {
+  position: relative;
+  display: block; }
+
+.skill-container span[class="next"] {
+  left: 2000px;
+  z-index: 5; }
+
+.skill-container span[class="previous"] {
+  left: -2000px;
+  z-index: 10; }
 
 /* ------------ iDo STYLES ------------ */
 #iDo {
@@ -118,6 +146,20 @@ section {
     padding-top: 40px;
     text-align: center;
     font-size: 7vw;
+    font-weight: bold; }
+  #iDo .section-body {
+    padding-top: 50px; }
+  #iDo .img-container {
+    margin-right: auto;
+    margin-left: auto; }
+  #iDo img {
+    border-radius: 30px;
+    padding: 20px;
+    background-color: #171717;
+    display: block;
+    margin: 0 auto; }
+  #iDo .section-body h2 {
+    font-size: 30px;
     font-weight: bold; }
 
 /*# sourceMappingURL=style.css.map */
