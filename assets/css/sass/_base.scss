@@ -5,6 +5,7 @@ body {
     color: $offwhite;
     text-transform: uppercase;
     background-color: $offblack;
+    overflow-x: hidden;
 }
 
 #pageHeader {
@@ -18,6 +19,12 @@ section {
 
 .full-width-on {
     width: 100vw;
+}
+
+.navbar-toggle {
+    position: absolute;
+    top: 0;
+    right: 0;
 }
 
 /* ------------ LOADER STYLES ------------ */
@@ -103,6 +110,9 @@ section {
     margin-right: auto; 
     z-index: 10000;
 }
+.navbar-inverse .navbar-nav > li > a, .navbar-inverse .navbar-brand {
+    text-align: center;
+}
 /*@keyframes underline {
     from {width: 0};
     to {width: 30px;}
@@ -138,9 +148,14 @@ section {
         margin-left: auto;
         margin-right: auto;
     }
-     p {
+    li {
+         line-height: 10vw;
+         list-style-type: none;
+     }
+    p {
          padding-top: 20px;
          line-height: 10vw;
+         list-style: none;
      }
      .header-tagline {
          display: block;
@@ -172,6 +187,10 @@ section {
         //width: 90vw;
     }
 }
-
+@media only screen and (max-height: 500px) {
+    #pageHeader div.header-tagline p {
+        display: none;
+    }
+}
 // header animation
 

@@ -9,9 +9,9 @@ Error: Undefined variable: "$offwhite".
 5:     color: $offwhite;
 6:     text-transform: uppercase;
 7:     background-color: $offblack;
-8: }
-9: 
-10: #pageHeader {
+8:     overflow-x: hidden;
+9: }
+10: 
 
 Backtrace:
 /home/ubuntu/workspace/assets/css/sass/_base.scss:5
@@ -64,4 +64,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$offwhite\".\A         on line 5 of /home/ubuntu/workspace/assets/css/sass/_base.scss\A \A 1: /* ------------ GLOBAL STYLES ------------ */\A 2: \A 3: body {\A 4:     font-family: 'Montserrat', Helvetica, sans-serif;\A 5:     color: $offwhite;\A 6:     text-transform: uppercase;\A 7:     background-color: $offblack;\A 8: }\A 9: \A 10: #pageHeader {"; }
+  content: "Error: Undefined variable: \"$offwhite\".\A         on line 5 of /home/ubuntu/workspace/assets/css/sass/_base.scss\A \A 1: /* ------------ GLOBAL STYLES ------------ */\A 2: \A 3: body {\A 4:     font-family: 'Montserrat', Helvetica, sans-serif;\A 5:     color: $offwhite;\A 6:     text-transform: uppercase;\A 7:     background-color: $offblack;\A 8:     overflow-x: hidden;\A 9: }\A 10: "; }

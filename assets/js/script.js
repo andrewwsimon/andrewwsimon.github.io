@@ -66,43 +66,45 @@ $(window).on('scroll', function() {
   }
 });
 
-/*header animation
+//header animation
 
 //declare array of objects
-var skills = [$('.skill-container span[class="active"]'), $('.skill-container span[class="next"]'), $('.skill-container span[class="previous"]')]
+//var skills = [$('.skill-container span[class="active"]'), $('.skill-container span[class="next"]'), $('.skill-container span[class="previous"]')];
+
+// SET INITIAL VALUES
+//$(".skill-container span:nth-child(1)").css({'left': '0'});
+//$(".skill-container span:nth-child(2)").css({'left': '2000'});
+//$(".skill-container span:nth-child(3)").css({'left': '-2000'});
 
 //$('.skill-container span[class="next"], .skill-container span[class="previous"]').css({'display': 'none'});
+//var i =0;
+//for (i=0; i<5; i++) {
+  /*setTimeout(function() {
 
-setTimeout(function() {
-    for (var i=0; i<Infinity; i++) {
+      // ACTIVE TO PREVIOUS
+      function activeToPrevious() { $('.skill-container span[class="active"]').animate({'left': '-2000px'}, { duration: 1000, queue: false }); }
+    
+      // NEXT TO ACTIVE
+      function nextToActive() { $('.skill-container span[class="next"]').animate({'left': '0'}, { duration: 1000, queue: false }); }
+      
+      // PREVIOUS TO NEXT
+      function previousToNext() { $('.skill-container span[class="previous"]').css({'left': '2000px'}); }
+      
+      //change classes
+      function changeClasses() {
+      $('.skill-container span[class="active"]').removeClass('active').addClass('previous');
+      $('.skill-container span[class="next"]').removeClass('next').addClass('active');
+      $('.skill-container span[class="previous"]').removeClass('previous').addClass('next')
+      }*/
+      
+  //}, 1500);
+//}
+$('.skill-container li:nth-child(1)').css({'left': '0'});
+$('.skill-container li:nth-child(2)').css({'left': '-2000px'});
+$('.skill-container li:nth-child(3)').css({'left': '2000px'});
 
-    // ACTIVE TO PREVIOUS
-    $('.skill-container span[class="active"]').animate({'left': '-2000px'}, { duration: 1000, queue: false });
-    
-    //change class
-    //$('.skill-container span[class="active"]').removeClass('active').addClass('previous');
-  
-    // NEXT TO ACTIVE
-    $('.skill-container span[class="next"]').animate({'left': '0px'}, { duration: 1000, queue: false });
-    
-    //change class
-    //$('.skill-container span[class="next"]').removeClass('next').addClass('active');
-    
-    // PREVIOUS TO NEXT
-    $('.skill-container span[class="previous"]').css({'left': '2000px'});
-    
-    //change class
-    //$('.skill-container span[class="previous"]').removeClass('previous').addClass('next');
-    
-    //change classes
-    $('.skill-container span[class="active"]').removeClass('active').addClass('previous');
-    $('.skill-container span[class="next"]').removeClass('next').addClass('active');
-    $('.skill-container span[class="previous"]').removeClass('previous').addClass('next');
-    
-
-    
-  }
-}, 1500);*/
-
-
-
+setInterval(function() {
+    $('.skill-container li:nth-child(1)').animate({'left': '-2000px'}, { duration: 1000, queue: false });
+    $('.skill-container li:nth-child(2)').css({'left': '2000px'}).animate({'left': '0'}, { duration: 1000, queue: false });
+    $('.skill-container li:nth-child(3)').after($('.skill-container li:nth-child(1)'));
+}, 2000);

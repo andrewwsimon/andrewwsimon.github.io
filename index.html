@@ -1,10 +1,9 @@
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Above comes first -->
     <meta name="description" content="I make websites. And other stuff.">
     <meta name="author" content="Andrew Simon">
@@ -47,7 +46,7 @@
         <div id="navbar" class="collapse navbar-collapse">
           <ul class="nav navbar-nav">
             <li class="active"><a href="#">Home<div class="anim-underline"></div></a></li>
-            <li><a href="#about">About<div class="anim-underline"></div></a></li>
+            <li><a href="#iDo">About<div class="anim-underline"></div></a></li>
             <li><a href="#contact">Contact<div class="anim-underline"></div></a></li>
           </ul>
         </div><!--/.nav-collapse -->
@@ -63,54 +62,83 @@
     </div>
 
       <!--<div class="background-image-container">
-        <img alt="background image" src="http://www.siwallpaperhd.com/wp-content/uploads/2015/10/palm_tree_california_wallpaper.jpg">
+        <img alt="background image" src="assets/img/bgbw.jpg">
       </div>-->
-      <div class="container">
-        
-        <section>
-          <header id="pageHeader">
-            <div class="col-sm-2 col-sm-offset-5">
-              <img src="assets/img/AS_Raster.png" alt="Andrew Simon Logo" class="img-responsive" width="100px">
-            </div>
-            <div class="col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3 row full-width">
-                <h1>Andrew&nbsp;Simon</h1>
-              <h2>Graphic&nbsp;Designer&nbsp;/ FilmMaker&nbsp;/ Web&nbsp;Developer</h2>
-            </div>
-            <div class="row">
-              <div class="col-xs-6 col-xs-offset-3 col-sm-2 col-sm-offset-5 horule">&nbsp;</div>
-            </div>
-            <div class="header-tagline col-sm-10 col-sm-offset-1 row">
-              <p>I make <span class="skill-container"><span class="active">websites.<!--</span><span class="next">graphics.</span><span class="previous">films.</span></span>--></p>
-            </div>
-            <div class="header-down">
-              <a href="#iDo" alt="link down page"><span class="glyphicon glyphicon-menu-down"></span></a>
-            </div>
-          </header>
-        </section>
+      <div class="bg-img">
+        <div class="container">
+          
+          <section>
+            <header id="pageHeader">
+              <div class="col-sm-2 col-sm-offset-5">
+                <img src="assets/img/AS_Raster.png" alt="Andrew Simon Logo" class="img-responsive" width="100px">
+              </div>
+              <div class="col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3 row full-width">
+                  <h1>Andrew&nbsp;Simon</h1>
+                <h2>Graphic&nbsp;Designer&nbsp;/ FilmMaker&nbsp;/ Web&nbsp;Developer</h2>
+              </div>
+              <div class="row">
+                <div class="col-xs-6 col-xs-offset-3 col-sm-2 col-sm-offset-5 horule">&nbsp;</div>
+              </div>
+              <div class="header-tagline col-sm-10 col-sm-offset-1 row">
+                <p>I make <ul class="skill-container col-xs-12"><li style="z-index: 10">websites.</li><li style="z-index: 10">graphics.</li><li style="z-index: 10">films.</li></ul></p>
+              </div>
+              <div class="header-down">
+                <a href="#iDo" alt="link down page"><span class="glyphicon glyphicon-menu-down"></span></a>
+              </div>
+            </header>
+          </section>
+        </div>
       </div>
       
       <section id="iDo">
         <div class="container">
-          <div>
+          <div class="content-container">
+            <header class="precontent">
+              <h1>Hey.</h1>
+              <p>I'm Andrew Simon a designer / developer based out of the New York metropolitan area.</p>
+            </header>
             <header class="section-header">
               <h1>What I do.</h1>
             </header>
-            <div class="section-body">
-              <div class="col-lg-4">
-                <div class="img-container">
-                  <img src="assets/img/iDo/paintbrush-design-tool-interface-symbol.svg" height="100px"></img>
-                  <h2 class="text-center">Graphic Designer</h2>
-                  <p></p>
+            <div class="section-body row">
+              <div class="col-sm-4 skill">
+                <div class="row">
+                  <div class="col-xs-2 col-sm-12">
+                    <div class="img-container">
+                      <img src="assets/img/iDo/paintbrush-design-tool-interface-symbol.svg"></img>
+                    </div>
+                  </div>
+                  <div class="col-xs-10 col-sm-12">
+                    <h2 class="text-center">Graphic Design</h2>
+                    <p>Photoshop: Logos, Infographics, Business Cards</p>
+                  </div>
                 </div>
               </div>
-              <div class="col-lg-4">
-                <img src="assets/img/iDo/domain-registration.svg" height="100px"></img>
-                <h2 class="text-center">Web Developer</h2>
-                <p></p>
+              <div class="col-sm-4 skill">
+                <div class="row">
+                  <div class="col-xs-2 col-sm-12">
+                    <div class="img-container">
+                      <img src="assets/img/iDo/domain-registration.svg" height="100px"></img>
+                    </div>
+                  </div>
+                  <div class="col-xs-10 col-sm-12">
+                    <h2 class="text-center">Web Development</h2>
+                    <p>Convey your businesses to a larger audience through a professionally designed website.</p>
+                  </div>
+                </div>
               </div>
-              <div class="col-lg-4">
-                <img src="assets/img/iDo/movie-symbol-of-video-camera.svg" height="100px"></img>
-                <h2 class="text-center">FilmMaker</h2>
+              <div class="col-sm-4 skill">
+                <div class="row">
+                  <div class="col-xs-2 col-sm-12">
+                    <div class="img-container">
+                      <img src="assets/img/iDo/movie-symbol-of-video-camera.svg" height="100px"></img>
+                    </div>
+                  </div>
+                  <div class="col-xs-10 col-sm-12">
+                    <h2 class="text-center">FilmMaking</h2>
+                    <p>Share experiences, products, or memories through high-quality editing.</p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>

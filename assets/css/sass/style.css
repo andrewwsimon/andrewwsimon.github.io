@@ -3,7 +3,8 @@ body {
   font-family: 'Montserrat', Helvetica, sans-serif;
   color: #F2F2F2;
   text-transform: uppercase;
-  background-color: #171717; }
+  background-color: #171717;
+  overflow-x: hidden; }
 
 #pageHeader {
   padding-top: 50px;
@@ -14,6 +15,11 @@ section {
 
 .full-width-on {
   width: 100vw; }
+
+.navbar-toggle {
+  position: absolute;
+  top: 0;
+  right: 0; }
 
 /* ------------ LOADER STYLES ------------ */
 #loader {
@@ -75,6 +81,9 @@ section {
   margin-right: auto;
   z-index: 10000; }
 
+.navbar-inverse .navbar-nav > li > a, .navbar-inverse .navbar-brand {
+  text-align: center; }
+
 /*@keyframes underline {
     from {width: 0};
     to {width: 30px;}
@@ -100,9 +109,13 @@ section {
   #pageHeader img {
     margin-left: auto;
     margin-right: auto; }
+  #pageHeader li {
+    line-height: 10vw;
+    list-style-type: none; }
   #pageHeader p {
     padding-top: 20px;
-    line-height: 10vw; }
+    line-height: 10vw;
+    list-style: none; }
   #pageHeader .header-tagline {
     display: block; }
   #pageHeader .header-down {
@@ -118,42 +131,94 @@ section {
   #pageHeader h1 {
     font-size: 5vw;
     letter-spacing: 1.1vw; } }
+@media only screen and (max-height: 500px) {
+  #pageHeader div.header-tagline p {
+    display: none; } }
 /* ------------ HEADER STYLES ------------ */
-.background-image-container img {
-  background-size: cover;
-  opacity: 0.1;
-  position: absolute;
-  overflow: hidden; }
+/*.background-image-container img {
+        background-size: cover;
+        opacity: 0.5;
+        position: absolute;
+        overflow: hidden;
+        top: 0;
+        left: 0;
+}
+.bg-img {
+    background-image: url("../../img/bgbw.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-clip: border-box;
+    //opacity: 0.2;
+    
+}*/
+.container {
+  opacity: 1; }
 
-.skill-container span[class="active"] {
+.skill-container {
+  overflow-x: hidden;
+  overflow-y: hidden;
+  margin: 0 auto;
+  display: block;
+  height: 15vw;
+  text-align: center;
+  list-style-type: none;
+  margin-left: 0; }
+
+.skill-container li {
   position: relative;
   display: block; }
 
-/*.skill-container span[class="next"] {
-    left: 2000px;
-    z-index: 5;
-}
+.skill-container li:nth-child(2) {
+  top: -10vw; }
 
-.skill-container span[class="previous"] {
-    left: -2000px;
-    z-index: 10;
-}*/
+.skill-container li:nth-child(3) {
+  top: -20vw; }
+
 /* ------------ iDo STYLES ------------ */
 #iDo {
   background-color: #F2F2F2;
   color: #171717; }
+  #iDo .content-container {
+    padding-top: 40px; }
+  #iDo .precontent {
+    padding-bottom: 10px; }
+    #iDo .precontent p {
+      font-size: 15px;
+      text-align: center; }
+    #iDo .precontent h1 {
+      font-size: 7vw; }
   #iDo h1 {
-    padding-top: 40px;
     text-align: center;
     font-weight: bold; }
   #iDo .section-body {
     padding-top: 1vw; }
-  #iDo .img-container {
-    margin-right: auto;
-    margin-left: auto; }
+  @media only screen and (min-width: 768px) {
+    #iDo .img-container {
+      margin-right: auto;
+      margin-left: auto; }
+      #iDo .img-container img {
+        height: 100px;
+        padding: 20px; }
+    #iDo p {
+      font-size: 14px;
+      text-align: center; } }
+  @media only screen and (max-width: 767px) {
+    #iDo .img-container {
+      margin-top: 5px;
+      margin-right: auto;
+      margin-left: auto; }
+      #iDo .img-container img {
+        height: 50px;
+        padding: 10px; }
+    #iDo .text-center {
+      margin-top: 0;
+      font-size: 15px; }
+    #iDo p {
+      font-size: 10px;
+      text-align: center; } }
   #iDo img {
-    border-radius: 30px;
-    padding: 20px;
+    border-radius: 25%;
     background-color: #171717;
     display: block;
     margin: 0 auto; }
@@ -164,7 +229,7 @@ section {
   #iDo h1 {
     font-size: 7vw; }
 
-  header p {
+  header li, header p {
     font-size: 10vw; }
 
   .section-body h2 {
@@ -173,7 +238,7 @@ section {
   #iDo h1 {
     font-size: 13vw; }
 
-  header p {
+  header li, header p {
     font-size: 13vw; }
 
   .section-body h2 {

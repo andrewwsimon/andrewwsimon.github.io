@@ -1,21 +1,21 @@
 /*
 Error: Undefined variable: "$offwhite".
-        on line 27 of /home/ubuntu/workspace/assets/css/sass/_index.scss
+        on line 55 of /home/ubuntu/workspace/assets/css/sass/_index.scss
 
-22:     z-index: 10;
-23: }*\/
-24: /* ------------ iDo STYLES ------------ *\/
-25: 
-26: #iDo {
-27:     background-color: $offwhite;
-28:     color: $offblack;
-29:     
-30:     h1 {
-31:         padding-top: 40px;
-32:         text-align: center;
+50:     top: -20vw;
+51: }
+52: /* ------------ iDo STYLES ------------ *\/
+53: 
+54: #iDo {
+55:     background-color: $offwhite;
+56:     color: $offblack;
+57: 
+58:     .content-container {
+59:         padding-top: 40px;
+60:     }
 
 Backtrace:
-/home/ubuntu/workspace/assets/css/sass/_index.scss:27
+/home/ubuntu/workspace/assets/css/sass/_index.scss:55
 /nix/store/zmisxnl63ica4zaviifixamr3xg27kzp-ruby-2.3.1-p0/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/script/tree/variable.rb:49:in `_perform'
 /nix/store/zmisxnl63ica4zaviifixamr3xg27kzp-ruby-2.3.1-p0/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/script/tree/node.rb:58:in `perform'
 /nix/store/zmisxnl63ica4zaviifixamr3xg27kzp-ruby-2.3.1-p0/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:397:in `visit_prop'
@@ -65,4 +65,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$offwhite\".\A         on line 27 of /home/ubuntu/workspace/assets/css/sass/_index.scss\A \A 22:     z-index: 10;\A 23: }*/\A 24: /* ------------ iDo STYLES ------------ */\A 25: \A 26: #iDo {\A 27:     background-color: $offwhite;\A 28:     color: $offblack;\A 29:     \A 30:     h1 {\A 31:         padding-top: 40px;\A 32:         text-align: center;"; }
+  content: "Error: Undefined variable: \"$offwhite\".\A         on line 55 of /home/ubuntu/workspace/assets/css/sass/_index.scss\A \A 50:     top: -20vw;\A 51: }\A 52: /* ------------ iDo STYLES ------------ */\A 53: \A 54: #iDo {\A 55:     background-color: $offwhite;\A 56:     color: $offblack;\A 57: \A 58:     .content-container {\A 59:         padding-top: 40px;\A 60:     }"; }
