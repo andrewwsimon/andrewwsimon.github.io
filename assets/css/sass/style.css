@@ -88,6 +88,33 @@ section {
     from {width: 0};
     to {width: 30px;}
 }*/
+/* ------------ STATUS STYLES ------------ */
+.status-container {
+  position: absolute;
+  top: 60px;
+  right: 3vw; }
+  .status-container a .btn {
+    color: #F2F2F2;
+    text-transform: uppercase;
+    text-decoration: none; }
+  .status-container a .btn:hover {
+    color: #E5E5E5;
+    text-decoration: none; }
+  .status-container .btn-default {
+    background: #171717;
+    border: none; }
+
+.status-container .available {
+  border-radius: 100%;
+  background-color: #7FFF38;
+  width: 10px;
+  height: 10px;
+  display: inline-block;
+  vertical-align: middle; }
+
+.btn.active.focus, .btn.active:focus, .btn.focus, .btn:active.focus, .btn:active:focus, .btn:focus {
+  outline: none; }
+
 /* ------------ HEADER STYLES ------------ */
 #pageHeader {
   text-align: center; }
@@ -132,7 +159,7 @@ section {
     font-size: 5vw;
     letter-spacing: 1.1vw; } }
 @media only screen and (max-height: 500px) {
-  #pageHeader div.header-tagline p {
+  #pageHeader div.header-tagline p, #pageHeader div.header-tagline li {
     display: none; } }
 /* ------------ HEADER STYLES ------------ */
 /*.background-image-container img {
@@ -225,8 +252,8 @@ section {
   #iDo .section-body h2 {
     font-weight: bold; }
 
-@media only screen and (min-width: 767px) {
-  #iDo h1 {
+@media only screen and (min-width: 768px) {
+  #iDo h1, #contact h1 {
     font-size: 7vw; }
 
   header li, header p {
@@ -234,8 +261,8 @@ section {
 
   .section-body h2 {
     font-size: 2vw; } }
-@media only screen and (max-width: 766px) {
-  #iDo h1 {
+@media only screen and (max-width: 767px) {
+  #iDo h1, #contact h1 {
     font-size: 13vw; }
 
   header li, header p {
@@ -243,5 +270,49 @@ section {
 
   .section-body h2 {
     font-size: 5vw; } }
+/* ------------ CONTACT STYLES ------------ */
+#contact {
+  height: 90vh; }
+  #contact .content-container {
+    padding: 40px; }
+  #contact h1 {
+    text-align: center;
+    font-weight: bold; }
+  #contact h2 {
+    text-align: center; }
+  #contact p {
+    padding-top: 10px;
+    text-align: center;
+    padding-bottom: 30px; }
+  #contact .btn {
+    margin-top: 50px;
+    margin: 0 auto;
+    text-transform: uppercase;
+    border-radius: 0;
+    border: none;
+    background-color: #F2F2F2; }
+  #contact a:hover {
+    text-decoration: none; }
+  #contact span.glyphicon {
+    margin-right: 10px; }
+  @media only screen and (max-width: 800px) {
+    #contact h2 {
+      font-size: 5vw; }
+    #contact p {
+      font-size: 2.5vw; } }
+  @media only screen and (min-width: 801px) {
+    #contact h2 {
+      font-size: 2.5vw; }
+    #contact p {
+      font-size: 1vw; } }
+
+/* ------------ FOOTER STYLES ------------ */
+#pageFooter {
+  height: 10vh;
+  background: #F2F2F2;
+  color: #171717; }
+  #pageFooter p {
+    text-align: center;
+    padding-top: 3vh; }
 
 /*# sourceMappingURL=style.css.map */

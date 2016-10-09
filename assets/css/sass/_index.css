@@ -1,21 +1,21 @@
 /*
 Error: Undefined variable: "$offwhite".
-        on line 55 of /home/ubuntu/workspace/assets/css/sass/_index.scss
+        on line 57 of /home/ubuntu/workspace/assets/css/sass/_index.scss
 
-50:     top: -20vw;
-51: }
-52: /* ------------ iDo STYLES ------------ *\/
-53: 
-54: #iDo {
-55:     background-color: $offwhite;
-56:     color: $offblack;
-57: 
-58:     .content-container {
-59:         padding-top: 40px;
-60:     }
+52:     top: -20vw;
+53: }
+54: /* ------------ iDo STYLES ------------ *\/
+55: 
+56: #iDo {
+57:     background-color: $offwhite;
+58:     color: $offblack;
+59: 
+60:     .content-container {
+61:         padding-top: 40px;
+62:     }
 
 Backtrace:
-/home/ubuntu/workspace/assets/css/sass/_index.scss:55
+/home/ubuntu/workspace/assets/css/sass/_index.scss:57
 /nix/store/zmisxnl63ica4zaviifixamr3xg27kzp-ruby-2.3.1-p0/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/script/tree/variable.rb:49:in `_perform'
 /nix/store/zmisxnl63ica4zaviifixamr3xg27kzp-ruby-2.3.1-p0/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/script/tree/node.rb:58:in `perform'
 /nix/store/zmisxnl63ica4zaviifixamr3xg27kzp-ruby-2.3.1-p0/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:397:in `visit_prop'
@@ -65,4 +65,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$offwhite\".\A         on line 55 of /home/ubuntu/workspace/assets/css/sass/_index.scss\A \A 50:     top: -20vw;\A 51: }\A 52: /* ------------ iDo STYLES ------------ */\A 53: \A 54: #iDo {\A 55:     background-color: $offwhite;\A 56:     color: $offblack;\A 57: \A 58:     .content-container {\A 59:         padding-top: 40px;\A 60:     }"; }
+  content: "Error: Undefined variable: \"$offwhite\".\A         on line 57 of /home/ubuntu/workspace/assets/css/sass/_index.scss\A \A 52:     top: -20vw;\A 53: }\A 54: /* ------------ iDo STYLES ------------ */\A 55: \A 56: #iDo {\A 57:     background-color: $offwhite;\A 58:     color: $offblack;\A 59: \A 60:     .content-container {\A 61:         padding-top: 40px;\A 62:     }"; }

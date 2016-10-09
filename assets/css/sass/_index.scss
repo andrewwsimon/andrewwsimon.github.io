@@ -30,6 +30,7 @@
     text-align: center;
     list-style-type: none;
     margin-left: 0;
+    //width: 100%;
 }
 
 .skill-container li {
@@ -131,8 +132,8 @@
     }
 }
 
-@media only screen and (min-width: 767px) {
-    #iDo h1 {
+@media only screen and (min-width: 768px) {
+    #iDo h1, #contact h1 {
         font-size: 7vw;
     }
     header li, header p {
@@ -143,8 +144,8 @@
     }
 
 }
-@media only screen and (max-width: 766px) {
-    #iDo h1 {
+@media only screen and (max-width: 767px) {
+    #iDo h1, #contact h1 {
         font-size: 13vw;
     }
     header li, header p {
@@ -153,4 +154,71 @@
     .section-body h2 {
     	font-size: 5vw;
     }
+}
+
+/* ------------ CONTACT STYLES ------------ */
+
+#contact {
+    
+    height: 90vh;
+    
+    .content-container {
+        padding: 40px;
+    }
+    h1 {
+        text-align: center;
+        font-weight: bold;
+    }
+    h2 {
+        text-align: center;
+    }
+    p {
+        padding-top: 10px;
+        text-align: center;
+        padding-bottom: 30px;
+    }
+    .btn {
+        margin-top: 50px;
+        margin: 0 auto;
+        text-transform: uppercase;
+        border-radius: 0;
+        border: none;
+        background-color: $offwhite;
+    }
+    a:hover {
+        text-decoration: none;
+    }
+    span.glyphicon {
+        margin-right: 10px;
+    }
+    @media only screen and (max-width: 800px) {
+        h2 {
+            font-size: 5vw;
+        }
+        p {
+            font-size: 2.5vw;
+        }
+    }
+    @media only screen and (min-width: 801px) {
+        h2 {
+            font-size: 2.5vw;
+        }
+        p {
+            font-size: 1vw;
+        }
+    }
+}
+
+/* ------------ FOOTER STYLES ------------ */
+
+#pageFooter {
+    height: 10vh;
+    background: $offwhite;
+    color: $offblack;
+    
+    p {
+        text-align: center;
+        padding-top: 3vh;
+    }
+    
 }

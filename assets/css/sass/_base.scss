@@ -118,6 +118,39 @@ section {
     to {width: 30px;}
 }*/
 
+/* ------------ STATUS STYLES ------------ */
+
+.status-container {
+    position: absolute;
+    top: 60px;
+    right: 3vw;
+    a .btn {
+        color: $offwhite;
+        text-transform: uppercase;
+        text-decoration: none;
+    }
+    a .btn:hover {
+        color: $darkeroffwhite;
+        text-decoration: none;
+    }
+    .btn-default {
+        background: $offblack;
+        border: none;
+    }
+}
+.status-container .available {
+    border-radius: 100%;
+    background-color: #7FFF38;
+    width: 10px;
+    height: 10px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.btn.active.focus, .btn.active:focus, .btn.focus, .btn:active.focus, .btn:active:focus, .btn:focus {
+    outline: none;
+}
+
 /* ------------ HEADER STYLES ------------ */
 
 #pageHeader {
@@ -188,7 +221,7 @@ section {
     }
 }
 @media only screen and (max-height: 500px) {
-    #pageHeader div.header-tagline p {
+    #pageHeader div.header-tagline p, #pageHeader div.header-tagline li {
         display: none;
     }
 }
