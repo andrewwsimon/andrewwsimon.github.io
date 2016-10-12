@@ -162,14 +162,18 @@ section {
   #pageHeader div.header-tagline p, #pageHeader div.header-tagline li {
     display: none; } }
 /* ------------ HEADER STYLES ------------ */
-/*.background-image-container img {
-        background-size: cover;
-        opacity: 0.5;
-        position: absolute;
-        overflow: hidden;
-        top: 0;
-        left: 0;
-}
+.background-image-container img {
+  width: 100vw;
+  background-size: cover;
+  opacity: 0.2;
+  position: absolute;
+  overflow-x: hidden;
+  background-position: center;
+  background-clip: border-box;
+  top: 0;
+  left: 0; }
+
+/*
 .bg-img {
     background-image: url("../../img/bgbw.jpg");
     background-size: cover;
