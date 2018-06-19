@@ -147,7 +147,9 @@ section {
   #pageHeader p {
     padding-top: 20px;
     line-height: 10vw;
-    list-style: none; }
+    list-style: none;
+    font-weight: normal;
+    margin: 0; }
   #pageHeader .header-tagline {
     display: block; }
   #pageHeader .header-down {
@@ -199,7 +201,8 @@ section {
   height: 15vw;
   text-align: center;
   list-style-type: none;
-  margin-left: 0; }
+  margin-left: 0;
+  padding-top: 10px; }
 
 .skill-container li {
   position: relative;
@@ -214,7 +217,9 @@ section {
 /* ------------ iDo STYLES ------------ */
 #iDo {
   background-color: #F2F2F2;
-  color: #171717; }
+  color: #171717;
+  height: auto;
+  padding-bottom: 75px; }
   #iDo .content-container {
     padding-top: 40px; }
   #iDo .precontent {

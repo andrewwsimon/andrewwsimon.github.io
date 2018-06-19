@@ -35,11 +35,13 @@
     list-style-type: none;
     margin-left: 0;
     //width: 100%;
+    padding-top: 10px;
 }
 
 .skill-container li {
     position: relative;
     display: block;
+    //padding-top: 10px;
 }
 
 .skill-container li:nth-child(1) {
@@ -60,6 +62,8 @@
 #iDo {
     background-color: $offwhite;
     color: $offblack;
+    height: auto;
+    padding-bottom: 75px;
 
     .content-container {
         padding-top: 40px;
