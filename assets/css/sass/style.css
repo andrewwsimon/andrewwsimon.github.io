@@ -68,8 +68,7 @@ section {
   color: #E5E5E5; }
 
 .navbar-brand > img {
-  display: inline;
-  vertical-align: top; }
+  display: inline; }
 
 #mainNav li:hover .anim-underline {
   width: 85%; }
